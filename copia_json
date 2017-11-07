@@ -1,0 +1,31 @@
+{
+    //ROOT WITHOUT COMMAND
+    "version": "2.0.0",
+    "isShellCommand": true,
+    "showOutput":"always",
+    "args":[],
+    
+    "tasks": [
+        {
+            "taskName": "XML Schema Validation",
+            "suppressTaskName":true,
+            "isBuildCommand:":true,
+            "command": "xmllint",
+            "args": ["${file}", "--schema","${fileBasenameNoExtension}.xsd"]
+        },
+        {
+            "taskName": "XML Well Formed",
+            "suppressTaskName":true,
+            "isBuildCommand":true,
+            "command": "xmllint",
+            "args": ["${file}"]
+        },
+        {
+            "taskName":"XML Validation",
+            "suppressTaskName":true,
+            "isBuildCommand":true,
+            "command": "xmllint",
+            "args": ["--valid ${file}"]
+        }
+    ]
+}
