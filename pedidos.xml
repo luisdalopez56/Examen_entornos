@@ -1,4 +1,28 @@
-<?xml version ="1.0" encoding= "UTF-8">
-<pedido id="123456">
+<?xml version ="1.0" encoding= "UTF-8"?>
 
+<pedido id="123456" fecha="2017-10-31">
+    <direccion_envio>
+        <coordenadas>Latitud=40.7127837</coordenadas>
+        <metodoEnvio>drone</metodoEnvio>
+    </direccion_envio>
+
+    <persona>
+        <nombre>Correcaminos</nombre>
+        <apellidos>Fast and Furry-ous</apellidos>
+    </persona> 
+
+    <productos>
+        <producto id="1">
+            <nombre>Pildoras de terremoto ACME</nombre>
+            <descripcion>"¿Para que esperar? Cree sus propios terremotos ¡Gran diversion asegurada!(Precaución: eficacia no probada en Correcaminos)"
+            <cantidad>1</cantidad>
+            <precio>$ 250</precio>
+        </producto>
+
+        <producto id="2">
+            <nombre>Alpiste para pájaros AJAX</nombre>
+            <cantidad>5 kg</cantidad>
+            <precio>$ 3</precio>
+        </producto>
+    </productos>
 </pedido>

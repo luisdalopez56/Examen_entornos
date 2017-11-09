@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--Primera parte: creamos el nombre del documento -->
+<!DOCTYPE pedidos [
+
+<!--Segunda parte: creamos los grupos anillados -->
+<!ELEMENT pedido (direccion_envio, persona, productos)>
+<!ELEMENT direccion_envio(coordenadas, metodoEnvio)>
+<!ELEMENT persona(nombre, apellidos)>
+<!ELEMENT productos(producto*)>
+<!ELEMENT producto(nombre, descripcion, cantidad, precio)>
+
+<!--Tercera parte: definimos los dato dentro de los grupos -->
+<!ELEMENT coordenadas (#PCDATA)>
+<!ELEMENT metodoEnvio (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+
+<!--Cuarta parte: vamos a darle atributos a algunos elementos -->
+<!ATTLIST pedido id CDATA #REQUIRED>
+<!ATTLIST pedido fecha CDATA #REQUIRED>
+]>
