@@ -8,24 +8,35 @@
     "tasks": [
         {
             "taskName": "XML Schema Validation",
-            "suppressTaskName":true,
-            "isBuildCommand:":true,
+            "suppressTaskName": true,
+            "isBuildCommand:": true,
             "command": "xmllint",
-            "args": ["${file}", "--schema","${fileBasenameNoExtension}.xsd"]
+            "args": [
+                "${file}",
+                "--schema",
+                "${fileDirname}/${fileBasenameNoExtension}.xsd"
+            ],
+            "problemMatcher": []
         },
         {
             "taskName": "XML Well Formed",
-            "suppressTaskName":true,
-            "isBuildCommand":true,
+            "suppressTaskName": true,
+            "isBuildCommand": true,
             "command": "xmllint",
-            "args": ["${file}"]
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
         },
         {
-            "taskName":"XML Validation",
-            "suppressTaskName":true,
-            "isBuildCommand":true,
+            "taskName": "XML Validation",
+            "suppressTaskName": true,
+            "isBuildCommand": true,
             "command": "xmllint",
-            "args": ["--valid ${file}"]
+            "args": [
+                "--valid ${file}"
+            ],
+            "problemMatcher": []
         }
     ]
 }

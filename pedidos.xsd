@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://lmsgi.iesvirgendelcarmen.com" 
+    xmlns="http://lmsgi.iesvirgendelcarmen.com" elementFormDefault="qualified">
+    <xs:element name="pedidos">
+        <xs:complexType name="pedido">
+            <xs:sequence>
+                <xs:element name="direccion_envio">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="coordenadas">
+                            <xs:element name="metodoEnvio">
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            
+            <xs:sequence>
+                <xs:element name="persona">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre">
+                            <xs:element name="apellidos">
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+                        
+            <xs:sequence>
+                <xs:element name="producto">
+                    <xs:complexType name="AttrElement">
+                        <xs:simpleContent>
+                            <xs:extension base="xs:id">
+                                <xs:attribute name="id" type="xs:id"></xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                    
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre">
+                            <xs:element name="descripcion">
+                            <xs:element name="cantidad">
+                            <xs:element name="precio"></xs:element>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+        

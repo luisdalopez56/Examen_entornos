@@ -14,7 +14,7 @@
     <productos>
         <producto id="1">
             <nombre>Pildoras de terremoto ACME</nombre>
-            <descripcion>"¿Para que esperar? Cree sus propios terremotos ¡Gran diversion asegurada!(Precaución: eficacia no probada en Correcaminos)"
+            <descripcion>"¿Para que esperar? Cree sus propios terremotos ¡Gran diversion asegurada!(Precaución: eficacia no probada en Correcaminos)"</descripcion>
             <cantidad>1</cantidad>
             <precio>$ 250</precio>
         </producto>

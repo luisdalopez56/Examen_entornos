@@ -5,10 +5,10 @@
 
 <!--Segunda parte: creamos los grupos anillados -->
 <!ELEMENT pedido (direccion_envio, persona, productos)>
-<!ELEMENT direccion_envio(coordenadas, metodoEnvio)>
-<!ELEMENT persona(nombre, apellidos)>
-<!ELEMENT productos(producto*)>
-<!ELEMENT producto(nombre, descripcion, cantidad, precio)>
+<!ELEMENT direccion_envio (coordenadas, metodoEnvio)>
+<!ELEMENT persona (nombre, apellidos)>
+<!ELEMENT productos (producto*)>
+<!ELEMENT producto (nombre, descripcion, cantidad, precio)>
 
 <!--Tercera parte: definimos los dato dentro de los grupos -->
 <!ELEMENT coordenadas (#PCDATA)>
@@ -23,4 +23,5 @@
 <!--Cuarta parte: vamos a darle atributos a algunos elementos -->
 <!ATTLIST pedido id CDATA #REQUIRED>
 <!ATTLIST pedido fecha CDATA #REQUIRED>
+<!ATTLIST producto id CDATA #REQUIRED>
 ]>
