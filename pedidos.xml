@@ -1,4 +1,5 @@
 <?xml version ="1.0" encoding= "UTF-8"?>
+<!DOCTYPE pedidos SYSTEM "pedidos.dtd">
 
 <pedido id="123456" fecha="2017-10-31">
     <direccion_envio>
